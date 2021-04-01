@@ -38,7 +38,7 @@ def render_key_image(deck, icon_filename, font_filename, label_text):
 	draw = ImageDraw.Draw(image)
 	font = ImageFont.truetype(font_filename, 18)
 	draw.text((image.width / 2, image.height - 60), text=label_text, font=font, anchor="ms", fill="white")
-
+	
 	return PILHelper.to_native_format(deck, image)
 
 
